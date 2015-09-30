@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('A4Gate', {
+        category: 'advanced',
+        color: '#E2D96E',
+        defaults: {
+            btname: {value: "", required: true}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "light.png",
+        label: function() {
+            return this.btname || "A4 Gate";
+        }
+    });
+</script>
+
+<script type="text/xred" data-template-name="A4Gate">
+    <div class="form-row">
+        <label for="node-input-btname"><i class="fa fa-tag"></i> BT Name</label>
+        <input type="text" id="node-input-btname" placeholder="BT Name">
+    </div>
+</script>
+
+<script type="text/xred" data-help-name="A4Gate">
+    <p>A Node-RED node for writing from serial over Bluetooth for communicate with the A4's gate</p>
+</script>

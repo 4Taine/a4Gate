@@ -1,0 +1,12 @@
+{
+  "name": "a4gate",
+  "version": "1.0.0",
+  "description": "A Node-RED node for sending messages over Bluetooth Classic serial for A4's gate",
+  "dependencies": {
+    "bluetooth-serial-port": "*"
+  },
+  "main": "a4gate.js",
+  "directories": {
+    "doc": "doc"
+  }
+}
