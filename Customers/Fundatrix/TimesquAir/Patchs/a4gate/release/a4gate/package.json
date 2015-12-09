@@ -1,11 +1,18 @@
 {
   "name": "a4gate",
   "version": "1.0.0",
+  "node-red": {
+      "nodes": {
+          "a4gate": "a4gate.js"
+      }
+  },
   "description": "A Node-RED node for sending messages over Bluetooth Classic serial for A4's gate",
+  "scripts": {
+    "preinstall": "apt-get install bluetooth bluez-utils blueman bluez python-gobject python-gobject-2 build-essential libbluetooth-dev -y"
+  },
   "dependencies": {
     "bluetooth-serial-port": "*"
   },
-  "main": "a4gate.js",
   "directories": {
     "doc": "doc"
   }
